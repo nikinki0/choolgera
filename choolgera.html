@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>t</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<style>
+body {
+  background-color: black;
+  font-family: cursive;
+}
+
+ table{ 
+ border-collapse: collapse; 
+ border-spacing: 0; 
+outline: 3px solid GreenYellow; 
+}
+
+th, td{
+padding: 5px  10px;
+border: 3px solid #000000;
+text-align:center;
+color: #000000; /* Цвет текста */
+font-size: 42px;
+}
+div{
+  height:3em;
+  width: 3em;
+}
+
+
+
+
+
+#d12 {
+ background-color: black;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 99s ease-in-out infinite alternate;
+  -moz-animation: glow 99s ease-in-out infinite alternate;
+  animation: glow 99s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 3px #FF00FF, 0 0 5px #FF00FF, 0 0 8px #e60073, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 15px #e60073, 0 0 18px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #FF00FF, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 15px #ff4da6, 0 0 18px #ff4da6, 0 0 20px #ff4da6;
+  }
+}
+   
+ 
+#d11 {
+ background-color: black;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 99s ease-in-out infinite alternate;
+  -moz-animation: glow 99s ease-in-out infinite alternate;
+  animation: glow 99s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #e60073, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 15px #e60073, 0 0 18px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 15px #ff4da6, 0 0 18px #ff4da6, 0 0 20px #ff4da6;
+  }
+}
+   
+
+
+
+
+th, td {
+ font-size: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 99s ease-in-out infinite alternate;
+  -moz-animation: glow 99s ease-in-out infinite alternate;
+  animation: glow 99s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 36px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+
+
+ 
+</style>
+<body>
+<button id="d11" onclick="fun1()">цифры</button>
+<button id="d12" onclick="refresh()">цвета</button>
+
+<table>
+<tbody>
+<tr>
+<td id="k1" class="color-div">---</td>
+<td id="k2" class="color-div">---</td>
+<td id="k3" class="color-div">---</td>
+<td id="k4" class="color-div">---</td>
+<td id="k5" class="color-div">---</td>
+<td id="k6" class="color-div">---</td>
+<td id="k7" class="color-div">---</td>
+<td id="k8" class="color-div">---</td>
+<td id="k9" class="color-div">---</td>
+<td id="k10" class="color-div">---</td>
+</tr>
+<tr>
+<td id="k11" class="color-div">---</td>
+<td id="k12" class="color-div">---</td>
+<td id="k13" class="color-div">---</td>
+<td id="k14" class="color-div">---</td>
+<td id="k15" class="color-div">---</td>
+<td id="k16" class="color-div">---</td>
+<td id="k17" class="color-div">---</td>
+<td id="k18" class="color-div">---</td>
+<td id="k19" class="color-div">---</td>
+<td id="k20" class="color-div">---</td>
+</tr>
+<td id="k21" class="color-div">---</td>
+<td id="k22" class="color-div">---</td>
+<td id="k23" class="color-div">---</td>
+<td id="k24" class="color-div">---</td>
+<td id="k25" class="color-div">---</td>
+<td id="k26" class="color-div">---</td>
+<td id="k27" class="color-div">---</td>
+<td id="k28" class="color-div">---</td>
+<td id="k29" class="color-div">---</td>
+<td id="k30" class="color-div">---</td>
+</tr>
+<td id="k31" class="color-div">---</td>
+<td id="k32" class="color-div">---</td>
+<td id="k33" class="color-div">---</td>
+<td id="k34" class="color-div">---</td>
+<td id="k35" class="color-div">---</td>
+<td id="k36" class="color-div">---</td>
+<td id="k37" class="color-div">---</td>
+<td id="k38" class="color-div">---</td>
+<td id="k39" class="color-div">---</td>
+<td id="k40" class="color-div">---</td>
+</tr>
+<tr>
+<td id="k41" class="color-div">---</td>
+<td id="k42" class="color-div">---</td>
+<td id="k43" class="color-div">---</td>
+<td id="k44" class="color-div">---</td>
+<td id="k45" class="color-div">---</td>
+<td id="k46" class="color-div">---</td>
+<td id="k47" class="color-div">---</td>
+<td id="k48" class="color-div">---</td>
+<td id="k49" class="color-div">---</td>
+<td id="k50" class="color-div">---</td>
+</tr>
+<tr>
+<td id="k51" class="color-div">---</td>
+<td id="k52" class="color-div">---</td>
+<td id="k53" class="color-div">---</td>
+<td id="k54" class="color-div">---</td>
+<td id="k55" class="color-div">---</td>
+<td id="k56" class="color-div">---</td>
+<td id="k57" class="color-div">---</td>
+<td id="k58" class="color-div">---</td>
+<td id="k59" class="color-div">---</td>
+<td id="k60" class="color-div">---</td>
+</tr>
+<tr>
+<td id="k61" class="color-div">---</td>
+<td id="k62" class="color-div">---</td>
+<td id="k63" class="color-div">---</td>
+<td id="k64" class="color-div">---</td>
+<td id="k65" class="color-div">---</td>
+<td id="k66" class="color-div">---</td>
+<td id="k67" class="color-div">---</td>
+<td id="k68" class="color-div">---</td>
+<td id="k69" class="color-div">---</td>
+<td id="k70" class="color-div">---</td>
+</tr>
+<tr>
+<td id="k71" class="color-div">---</td>
+<td id="k72" class="color-div">---</td>
+<td id="k73" class="color-div">---</td>
+<td id="k74" class="color-div">---</td>
+<td id="k75" class="color-div">---</td>
+<td id="k76" class="color-div">---</td>
+<td id="k77" class="color-div">---</td>
+<td id="k78" class="color-div">---</td>
+<td id="k79" class="color-div">---</td>
+<td id="k80" class="color-div">---</td>
+</tr>
+<tr>
+<td id="k81" class="color-div">---</td>
+<td id="k82" class="color-div">---</td>
+<td id="k83" class="color-div">---</td>
+<td id="k84" class="color-div">---</td>
+<td id="k85" class="color-div">---</td>
+<td id="k86" class="color-div">---</td>
+<td id="k87" class="color-div">---</td>
+<td id="k88" class="color-div">---</td>
+<td id="k89"class="color-div">---</td>
+<td id="k90"class="color-div">---</td>
+</tr>
+<tr>
+<td id="k91"class="color-div">---</td>
+<td id="k92"class="color-div">---</td>
+<td id="k93"class="color-div"> ---</td>
+<td id="k94"class="color-div">--- </td>
+<td id="k95"class="color-div">--- </td>
+<td id="k96"class="color-div"> ---</td>
+<td id="k97"class="color-div"> ---</td>
+<td id="k98"class="color-div"> ---</td>
+<td id="k99"class="color-div"> ---</td>
+<td id="k100"class="color-div"> ---</td>
+
+</tr>
+
+</table>
+</body>
+
+<script>
+function fun1() {
+
+
+var getRandomArr = (size, min, max) => Array
+  .from({ length: max - min + 1 }, (n, i) => i + min)
+  .sort(() => Math.random() - 0.5)
+  .slice(-size);
+
+
+var arr = getRandomArr(100, 1, 100);
+  
+  
+var text = String(arr);
+
+
+var myArray = text.split(',');
+				
+
+document.getElementById("k1").innerText = + myArray[0] + ' ';
+document.getElementById("k2").innerText = + myArray[1] + ' ';
+document.getElementById("k3").innerText = + myArray[2] + ' ';
+document.getElementById("k4").innerText = + myArray[3] + ' ';
+document.getElementById("k5").innerText = + myArray[4] + ' ';
+document.getElementById("k6").innerText = + myArray[5]+ ' ';
+document.getElementById("k7").innerText = + myArray[6] + ' ';
+document.getElementById("k8").innerText = + myArray[7] + ' ';
+document.getElementById("k9").innerText = + myArray[8] + ' ';
+document.getElementById("k10").innerText = + myArray[9] + ' ';
+document.getElementById("k11").innerText = + myArray[10] + ' ';
+document.getElementById("k12").innerText = + myArray[11] + ' ';
+document.getElementById("k13").innerText = + myArray[12] + ' ';
+document.getElementById("k14").innerText = + myArray[13] + ' ';
+document.getElementById("k15").innerText = + myArray[14] + ' ';
+document.getElementById("k16").innerText = + myArray[15] + ' ';
+document.getElementById("k17").innerText = + myArray[16] + ' ';
+document.getElementById("k18").innerText = + myArray[17] + ' ';
+document.getElementById("k19").innerText = + myArray[18] + ' ';
+document.getElementById("k20").innerText = + myArray[19] + ' ';
+document.getElementById("k21").innerText = + myArray[20] + ' ';
+document.getElementById("k22").innerText = + myArray[21] + ' ';
+document.getElementById("k23").innerText = + myArray[22] + ' ';
+document.getElementById("k24").innerText = + myArray[23] + ' ';
+document.getElementById("k25").innerText = + myArray[24] + ' ';
+document.getElementById("k26").innerText = + myArray[25] + ' ';
+document.getElementById("k27").innerText = + myArray[26] + ' ';
+document.getElementById("k28").innerText = + myArray[27] + ' ';
+document.getElementById("k29").innerText = + myArray[28] + ' ';
+document.getElementById("k30").innerText = + myArray[29] + ' ';
+document.getElementById("k31").innerText = + myArray[30] + ' ';
+document.getElementById("k32").innerText = + myArray[31] + ' ';
+document.getElementById("k33").innerText = + myArray[32] + ' ';
+document.getElementById("k34").innerText = + myArray[33] + ' ';
+document.getElementById("k35").innerText = + myArray[34] + ' ';
+document.getElementById("k36").innerText = + myArray[35] + ' ';
+document.getElementById("k37").innerText = + myArray[36] + ' ';
+document.getElementById("k38").innerText = + myArray[37] + ' ';
+document.getElementById("k39").innerText = + myArray[38] + ' ';
+document.getElementById("k40").innerText = + myArray[39] + ' ';
+document.getElementById("k41").innerText = + myArray[40] + ' ';
+document.getElementById("k42").innerText = + myArray[41] + ' ';
+document.getElementById("k43").innerText = + myArray[42] + ' ';
+document.getElementById("k44").innerText = + myArray[43] + ' ';
+document.getElementById("k45").innerText = + myArray[44] + ' ';
+document.getElementById("k46").innerText = + myArray[45] + ' ';
+document.getElementById("k47").innerText = + myArray[46] + ' ';
+document.getElementById("k48").innerText = + myArray[47] + ' ';
+document.getElementById("k49").innerText = + myArray[48] + ' ';
+document.getElementById("k50").innerText = + myArray[49] + ' ';
+document.getElementById("k51").innerText = + myArray[50] + ' ';
+document.getElementById("k52").innerText = + myArray[51] + ' ';
+document.getElementById("k53").innerText = + myArray[52] + ' ';
+document.getElementById("k54").innerText = + myArray[53] + ' ';
+document.getElementById("k55").innerText = + myArray[54] + ' ';
+document.getElementById("k56").innerText = + myArray[55] + ' ';
+document.getElementById("k57").innerText = + myArray[56] + ' ';
+document.getElementById("k58").innerText = + myArray[57] + ' ';
+document.getElementById("k59").innerText = + myArray[58] + ' ';
+document.getElementById("k60").innerText = + myArray[59] + ' ';
+document.getElementById("k61").innerText = + myArray[60] + ' ';
+document.getElementById("k62").innerText = + myArray[61] + ' ';
+document.getElementById("k63").innerText = + myArray[62] + ' ';
+document.getElementById("k64").innerText = + myArray[63] + ' ';
+document.getElementById("k65").innerText = + myArray[64] + ' ';
+document.getElementById("k66").innerText = + myArray[65] + ' ';
+document.getElementById("k67").innerText = + myArray[66] + ' ';
+document.getElementById("k68").innerText = + myArray[67] + ' ';
+document.getElementById("k69").innerText = + myArray[68] + ' ';
+document.getElementById("k70").innerText = + myArray[69] + ' ';
+document.getElementById("k71").innerText = + myArray[70] + ' ';
+document.getElementById("k72").innerText = + myArray[71] + ' ';
+document.getElementById("k73").innerText = + myArray[72] + ' ';
+document.getElementById("k74").innerText = + myArray[73] + ' ';
+document.getElementById("k75").innerText = + myArray[74] + ' ';
+document.getElementById("k76").innerText = + myArray[75] + ' ';
+document.getElementById("k77").innerText = + myArray[76] + ' ';
+document.getElementById("k78").innerText = + myArray[77] + ' ';
+document.getElementById("k79").innerText = + myArray[78] + ' ';
+document.getElementById("k80").innerText = + myArray[79] + ' ';
+document.getElementById("k81").innerText = + myArray[80] + ' ';
+document.getElementById("k82").innerText = + myArray[81] + ' ';
+document.getElementById("k83").innerText = + myArray[82] + ' ';
+document.getElementById("k84").innerText = + myArray[83] + ' ';
+document.getElementById("k85").innerText = + myArray[84] + ' ';
+document.getElementById("k86").innerText = + myArray[85] + ' ';
+document.getElementById("k87").innerText = + myArray[86] + ' ';
+document.getElementById("k88").innerText = + myArray[87] + ' ';
+document.getElementById("k89").innerText = + myArray[88] + ' ';
+document.getElementById("k90").innerText = + myArray[89] + ' ';
+document.getElementById("k91").innerText = + myArray[90] + ' ';
+document.getElementById("k92").innerText = + myArray[91] + ' ';
+document.getElementById("k93").innerText = + myArray[92] + ' ';
+document.getElementById("k94").innerText = + myArray[93] + ' ';
+document.getElementById("k95").innerText = + myArray[94] + ' ';
+document.getElementById("k96").innerText = + myArray[95] + ' ';
+document.getElementById("k97").innerText = + myArray[96] + ' ';
+document.getElementById("k98").innerText = + myArray[97] + ' ';
+document.getElementById("k99").innerText = + myArray[98] + ' ';
+document.getElementById("k100").innerText = + myArray[99] + ' ';
+
+}
+$(document).ready(function(){
+ 
+ 
+  var colors = ['DarkGreen',' Aqua'];
+  
+  
+  $('.color-div').each(function(){
+    var new_color = colors[Math.floor(Math.random()*colors.length)];
+    $(this).css('background-color',new_color);
+  });
+});  // End ready
+  
+  
+ function refresh(){
+        window.location.reload("Refresh")
+      }
+	  
+	  
+	  
+	
+	  
+
+
+document.onkeydown = function(e) {
+    if (e.keyCode == "A".charCodeAt()) {
+        alert("A pressed");}
+		if (e.keyCode == "S".charCodeAt()) {
+        alert("S pressed");}
+    
+    
+}
+</script>
+</body>
+</html>
